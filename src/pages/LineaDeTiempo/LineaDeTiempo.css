@@ -1,0 +1,21 @@
+.linea-de-tiempo-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 40px 64px;
+}
+
+.linea-de-tiempo-page__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  align-items: stretch;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 900px) {
+  .linea-de-tiempo-page__cards {
+    grid-template-columns: 1fr;
+  }
+}

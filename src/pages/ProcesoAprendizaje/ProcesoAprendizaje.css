@@ -1,0 +1,22 @@
+.proceso-page {
+  padding-block: 40px 56px;
+}
+
+.proceso-page__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.proceso-page__back {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+@media (max-width: 900px) {
+  .proceso-page__cards {
+    grid-template-columns: 1fr;
+  }
+}

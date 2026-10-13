@@ -1,0 +1,22 @@
+.premiaciones-page {
+  padding-block: 40px 56px;
+}
+
+.premiaciones-page__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 360px));
+  justify-content: center;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.premiaciones-page__back {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+/* La descripción de cada tarjeta lleva fecha y dependencias en líneas separadas. */
+.premiaciones-page__cards .module-card__description {
+  white-space: pre-line;
+}

@@ -1,0 +1,74 @@
+.bipal-page {
+  padding-block: 32px 64px;
+}
+
+.bipal-page__intro {
+  max-width: 720px;
+  margin: 24px auto 32px;
+  text-align: center;
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+}
+
+.bipal-page__feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.bipal-page__feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 16px;
+  text-align: center;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 10px rgba(11, 79, 58, 0.06);
+}
+
+.bipal-page__feature-card span {
+  font-size: 1.75rem;
+}
+
+.bipal-page__feature-card p {
+  margin: 0;
+}
+
+.bipal-page__image-section {
+  text-align: center;
+}
+
+.bipal-page__platform-img {
+  max-width: 100%;
+  width: 640px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 6px 20px rgba(11, 79, 58, 0.14);
+}
+
+.bipal-page__guia {
+  max-width: 720px;
+  margin: 40px auto 0;
+  padding: 32px 28px;
+  text-align: center;
+  background: var(--color-primary-soft);
+  border-radius: var(--radius-md);
+}
+
+.bipal-page__guia-img {
+  max-width: 100%;
+  width: 480px;
+  margin: 16px 0 24px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 2px 10px rgba(11, 79, 58, 0.08);
+}
+
+@media (max-width: 767px) {
+  .bipal-page__feature-grid {
+    grid-template-columns: 1fr;
+  }
+}

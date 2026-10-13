@@ -1,0 +1,15 @@
+.entrevistas-page {
+  padding-block: 40px 56px;
+}
+
+.entrevistas-page__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.entrevistas-page__back {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}

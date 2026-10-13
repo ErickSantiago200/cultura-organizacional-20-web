@@ -1,0 +1,10 @@
+.institutional-banner {
+  width: 100%;
+  line-height: 0;
+}
+
+.institutional-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,6 @@
+.servidores-retiran-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 40px 64px;
+}

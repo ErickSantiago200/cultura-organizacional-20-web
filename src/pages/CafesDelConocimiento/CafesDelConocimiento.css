@@ -1,0 +1,36 @@
+.cafes-del-conocimiento-page {
+  padding-block: 40px 56px;
+}
+
+.cafes-del-conocimiento-page__year {
+  margin-bottom: 40px;
+}
+
+.cafes-del-conocimiento-page__year h2 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.cafes-del-conocimiento-page__year h2::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  background: var(--color-primary-soft);
+}
+
+.cafes-del-conocimiento-page__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.cafes-del-conocimiento-page__back {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 8px;
+}
