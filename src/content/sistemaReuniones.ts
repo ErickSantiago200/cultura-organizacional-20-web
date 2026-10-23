@@ -70,6 +70,14 @@ export const sistemaReunionesContent = {
     ] satisfies ReunionesCard[],
   },
 
+  tutorial: {
+    title: 'Tutorial: Sistema de Gestión de Reuniones',
+    subtitle: 'Aprende a utilizar el aplicativo',
+    url: 'https://youtube.com/shorts/U40_pxLbWB8',
+    videoTitle: 'Tutorial en video: cómo utilizar el Sistema de Gestión de Reuniones',
+    placeholder: 'Video tutorial próximamente disponible',
+  },
+
   asistencia: {
     title: 'Cómo registrar asistencia',
     intro: 'No requiere crear reunión ni iniciar sesión. Se puede ingresar de tres formas:',

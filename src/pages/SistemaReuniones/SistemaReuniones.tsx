@@ -1,6 +1,7 @@
 import PageHeader from '../../components/PageHeader/PageHeader';
 import BackButton from '../../components/BackButton/BackButton';
 import PhotoCarousel from '../../components/PhotoCarousel/PhotoCarousel';
+import VideoEmbed from '../../components/VideoEmbed/VideoEmbed';
 import { sistemaReunionesContent as content } from '../../content/sistemaReuniones';
 import './SistemaReuniones.css';
 
@@ -27,6 +28,18 @@ function SistemaReuniones() {
               </li>
             ))}
           </ul>
+        </section>
+
+        <section className="sistema-reuniones__section">
+          <h2>{content.tutorial.title}</h2>
+          <p className="sistema-reuniones__section-intro">{content.tutorial.subtitle}</p>
+          <VideoEmbed
+            url={content.tutorial.url}
+            title={content.tutorial.videoTitle}
+            placeholder={content.tutorial.placeholder}
+            vertical
+            privacyEnhanced={false}
+          />
         </section>
 
         <section className="sistema-reuniones__section">

@@ -10,6 +10,13 @@
   box-shadow: 0 6px 20px rgba(11, 79, 58, 0.14);
 }
 
+/* Video vertical (Shorts): proporción 9:16, ancho acotado en escritorio y
+   adaptable en móviles (nunca más ancho que su contenedor). */
+.video-embed--vertical {
+  max-width: 320px;
+  aspect-ratio: 9 / 16;
+}
+
 .video-embed iframe {
   position: absolute;
   inset: 0;

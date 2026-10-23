@@ -5,6 +5,13 @@ interface Props {
   url: string;
   title: string;
   placeholder: string;
+  /** Video vertical (YouTube Shorts, 9:16): marco angosto centrado que lo muestra completo. */
+  vertical?: boolean;
+  /**
+   * Usa `youtube-nocookie.com` (modo de privacidad mejorada, por defecto). Con
+   * `false` se incrusta desde `youtube.com/embed`.
+   */
+  privacyEnhanced?: boolean;
 }
 
 function getYouTubeId(url: string): string | null {
@@ -28,12 +35,14 @@ function getYouTubeId(url: string): string | null {
  * Video de YouTube responsive (16:9). Si todavía no hay URL válida, muestra
  * un placeholder con el mensaje indicado.
  */
-function VideoEmbed({ url, title, placeholder }: Props) {
+function VideoEmbed({ url, title, placeholder, vertical = false, privacyEnhanced = true }: Props) {
   const id = getYouTubeId(url);
+  const className = `video-embed ${vertical ? 'video-embed--vertical' : ''}`;
+  const host = privacyEnhanced ? 'www.youtube-nocookie.com' : 'www.youtube.com';
 
   if (!id) {
     return (
-      <div className="video-embed video-embed--placeholder" role="img" aria-label={placeholder}>
+      <div className={`${className} video-embed--placeholder`} role="img" aria-label={placeholder}>
         <span className="video-embed__icon" aria-hidden="true">
           ▶
         </span>
@@ -43,9 +52,9 @@ function VideoEmbed({ url, title, placeholder }: Props) {
   }
 
   return (
-    <div className="video-embed">
+    <div className={className}>
       <iframe
-        src={`https://www.youtube-nocookie.com/embed/${id}`}
+        src={`https://${host}/embed/${id}`}
         title={title}
         loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
